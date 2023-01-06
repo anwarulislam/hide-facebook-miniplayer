@@ -3,9 +3,18 @@
   "description": "Hide Facebook MiniPlayer on Desktop",
   "homepage_url": "https://github.com/anwarulislam/hide-facebook-miniplayer",
   "version": "0.0.1",
+  "author": "Anwarul Islam",
   "manifest_version": 3,
+  "icons": {
+    "48": "src/images/48.png",
+    "128": "src/images/128.png"
+  },
   "action": {
-    "default_title": "Hide Facebook MiniPlayer"
+    "default_title": "Hide Facebook MiniPlayer",
+    "default_icon": "src/images/48.png"
+  },
+  "browser_action": {
+    "default_icon": "src/images/48.png"
   },
   "content_scripts": [
     {
