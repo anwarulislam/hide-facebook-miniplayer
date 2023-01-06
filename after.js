@@ -6,7 +6,6 @@ const probableCloseBtnAttr = "Close Watch and Scroll";
     const probableCloseBtn = document.querySelector(
       `[aria-label="${probableCloseBtnAttr}"]`
     );
-    console.log(probableCloseBtn);
     if (probableCloseBtn) {
       probableCloseBtn.click();
     }
