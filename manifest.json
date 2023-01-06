@@ -6,20 +6,17 @@
   "author": "Anwarul Islam",
   "manifest_version": 3,
   "icons": {
-    "48": "src/images/48.png",
-    "128": "src/images/128.png"
+    "48": "src/assets/images/48.png",
+    "128": "src/assets/images/128.png"
   },
   "action": {
     "default_title": "Hide Facebook MiniPlayer",
-    "default_icon": "src/images/48.png"
-  },
-  "browser_action": {
-    "default_icon": "src/images/48.png"
+    "default_icon": "src/assets/images/48.png"
   },
   "content_scripts": [
     {
       "run_at": "document_idle",
-      "js": ["after.js"],
+      "js": ["src/scripts/after.js"],
       "matches": ["https://*.facebook.com/*"]
     }
   ],
